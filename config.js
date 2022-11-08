@@ -11,7 +11,7 @@ global.location = 'Monaragala LK'
 global.gurl = 'https://instagram.com/' // add your username
 global.sudo = process.env.SUDO || '94718080458'
 global.website = 'https://github.com/OminduAnjane/Queen-Lara-Md' //wa.me/+91000000000000
-global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png'
+global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://github.com/OminduAnjane/Queen-Lora-Md-2.0V/blob/master/loramedia/lora.jpg'
 module.exports = {
   botname: process.env.BOT_NAME || 'Queen Lara',
   ownername:process.env.OWNER_NAME || 'Omindu Anjana',
