@@ -4,6 +4,6 @@ apt-get install nodejs -y
 apt-get install ffmpeg -y
 apt-get install imagemagick -y
 apt-get install yarn
-git clone https://github.com/Secktorbot/Secktor-Md
-cd Secktor-Md
+git clone https://github.com/OminduAnjane/Queen-Lara-Md
+cd Queen-Lara-Md
 npm start
