@@ -3,7 +3,7 @@ const { sleep } = require('../../lib/myfuncn')
 module.exports = {
     name: 'broadcast',
     category: 'owner',
-    desc: 'Sends SECKTOR userbot group link.',
+    desc: 'Sends Queen Lara Md userbot group link.',
     async exec(citel, Void,args,isCreator) {
       if(!isCreator) return citel.reply(tlang().owner)
         let getGroups = await Void.groupFetchAllParticipating();
