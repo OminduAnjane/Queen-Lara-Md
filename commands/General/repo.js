@@ -9,7 +9,7 @@ module.exports = {
         
         let buttonMessaged = {
             image: { url: await botpic() },
-            caption: `Hey ${citel.pushName}\n*This is Secktor Repo*\n\n*Repo:* https://github.com/OminduAnjane/Queen-Lara-Md\n\n*Whatsapp Group:* https://chat.whatsapp.com/Bl2F9UTVU4CBfZU6eVnrbCl\n\n*Deploy Your Own:*-\nwabot.queenlora/deply `,
+            caption: `Hey ${citel.pushName}\n*This is Queen Lara Md Repo*\n\n*Repo:* https://github.com/OminduAnjane/Queen-Lara-Md\n\n*Whatsapp Group:* https://chat.whatsapp.com/Bl2F9UTVU4CBfZU6eVnrbCl\n\n*Deploy Your Own:*-\nwabot.queenlora/deply `,
             footer: ` ` + tlang().footer,
             headerType: 4,
             contextInfo: {
