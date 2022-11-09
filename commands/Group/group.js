@@ -28,14 +28,14 @@ module.exports = {
 					{
 						buttonId: `${prefix}group open`,
 						buttonText: {
-							displayText: "📍Open",
+							displayText: "⫷UnMute⫸",
 						},
 						type: 1,
               },
 					{
 						buttonId: `${prefix}group close`,
 						buttonText: {
-							displayText: "📍Close",
+							displayText: "⫷Mute⫸",
 						},
 						type: 1,
               },
