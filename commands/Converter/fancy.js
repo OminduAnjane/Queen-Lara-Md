@@ -4,13 +4,13 @@ module.exports = {
    name: 'fancy',
    category: 'converter',
    desc: 'Makes stylish/fancy given text.',
-   use: '5 SamPandey001',
+   use: '5 Omindu Anjana ',
    async exec(citel, Void,args) {
 if (isNaN(args[0])){
 let text = tiny(
-        "Fancy text generator\n\nExample: .fancy 32 Secktor Userbot\n\n"
+        "Fancy text generator\n\nExample: .fancy 32 Queen Lara Md Userbot\n\n"
       );
-      listall("Secktor Bot").forEach((txt, num) => {
+      listall("Queen Lora Md").forEach((txt, num) => {
         text += `${(num += 1)} ${txt}\n`;
       });
       return await citel.reply(text);
