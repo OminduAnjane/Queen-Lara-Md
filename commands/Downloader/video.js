@@ -16,7 +16,7 @@ module.exports = {
 				listSerch.push({
 					title: i.title,
 					rowId: `${prefix}ytmp4 ${i.url}`,
-					description: `Secktor / ${i.timestamp}`
+					description: `Queen Lara Md / ${i.timestamp}`
 				})
 			}
 			const sections = [
@@ -30,7 +30,7 @@ module.exports = {
 			const listMessage = {
 				text: teskd,
 				footer: tlang().footer,
-				title: ` *🎥Youtube Search results by  ${tlang().title}📽️*`,
+				title: ` *🎬Youtube Search results by  ${tlang().title}📽️*`,
 				buttonText: "Videos",
 				mentions: await Void.parseMention(teskd),
 				sections
