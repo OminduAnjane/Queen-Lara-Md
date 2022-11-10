@@ -8,7 +8,7 @@ module.exports = {
    async exec(citel, Void,args,isCreator) {
 
     if (args.join(" ") === "list") {
-        await citel.reply(`💠Avilable Models in Secktor💠\n\n1-Secktor\n2-Zerotwo\n3-Friday\n4-Luffy\n5-Nezuko\n6-Goku\n7-Genos\n8-Ayanokoji\n9-Naruto\n10-Gideon\n11-parker\n12-adam`);
+        await citel.reply(`💠Avilable Models in Queen Lara💠\n\n1-Queen Lara Md\n2-Zerotwo\n3-Friday\n4-Luffy\n5-Nezuko\n6-Goku\n7-Genos\n8-Ayanokoji\n9-Naruto\n10-Gideon\n11-parker\n12-adam`);
         return
     }
     if (!isCreator) return citel.reply(tlang().owner);
@@ -21,10 +21,10 @@ module.exports = {
         // await Void.updateProfileName(`tlang().title`)
         await heroku.patch(baseURI + "/config-vars", {
             body: {
-        ["THEME"]: "SECKTOR",
+        ["THEME"]: "LARALK",
             },
         });
-        await citel.reply(` 🟩Secktor Theme has been integrated successfully.\nIt will require couple seconds to configure databse`);
+        await citel.reply(` 🟩Lara Lk Theme has been integrated successfully.\nIt will require couple seconds to configure databse`);
         return;
     }
     if (args.join(" ") === "zerotwo") {
