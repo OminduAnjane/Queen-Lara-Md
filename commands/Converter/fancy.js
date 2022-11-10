@@ -10,7 +10,7 @@ if (isNaN(args[0])){
 let text = tiny(
         "Fancy text generator\n\nExample: .fancy 32 Queen Lara Md Userbot\n\n"
       );
-      listall("Queen Lora Md").forEach((txt, num) => {
+      listall("Queen Lara Md").forEach((txt, num) => {
         text += `${(num += 1)} ${txt}\n`;
       });
       return await citel.reply(text);
