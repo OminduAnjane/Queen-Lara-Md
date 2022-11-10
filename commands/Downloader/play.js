@@ -15,14 +15,14 @@ module.exports = {
         {
             buttonId: `${prefix}ytmp4 ${anu.url}`,
             buttonText: {
-                displayText: "► Video",
+                displayText: "🎬 Video",
             },
             type: 1,
     },
         {
             buttonId: `${prefix}ytmp3 ${anu.url}`,
             buttonText: {
-                displayText: "♫ Audio",
+                displayText: "🎶 Audio",
             },
             type: 1,
     },
