@@ -7,7 +7,7 @@ module.exports = {
     desc: 'Tells, is bot alive??.',
     async exec(citel, Void,args,isAdmins) {
         const aliveadm = isAdmins ? "True" : "False";
-			let alivemessage = process.env.ALIVE_MESSAGE || `*A bot developed by OminduAnjane.*`
+			let alivemessage = process.env.ALIVE_MESSAGE || `*A JavaScript WhatsApp Bot Developed by OminduAnjane.*`
 			const alivtxt = `
 *Hello, my ${citel.pushName},*
 *This is  ${tlang().title}.*
@@ -19,7 +19,7 @@ ${alivemessage}
 *❖Edition:-* PUBLIC
 *Type ${prefix}menu for my command list.*
     
-*Powered by ${Config.ownername}*
+*Powered by Queen Lara Md*
     `;
 			let aliveMessage = {
 				image: {
