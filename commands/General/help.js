@@ -7,7 +7,7 @@ let { fancytext,tlang,tiny,runtime,formatp,botpic} = require("../../lib");
 
 module.exports = {
     name: "help",
-    alias: ["h", "cmd", "menu"],
+    alias: ["panel", "cmd", "menu"],
     category: "general",
     async exec(citel, Void, args) {
         if (args.join(' ')) {
@@ -42,7 +42,7 @@ const time = moment(moment())
       .format('HH:mm:ss')
     moment.tz.setDefault('Asia/KOLKATA')
       .locale('id')
-const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+const date = moment.tz('Asia/Colombo').format('DD/MM/YYYY')
 let str = `╭────〔 `+ fancytext(Config.ownername.split(' ')[0],58) +` 〕─────⊷\n` 
 str+=
 '```'+`│ ╭──────────────
@@ -58,17 +58,17 @@ str+=
 │ ╰────────────
 ╰───────────────⊷\n`+'```'
        const keys = Object.keys(category);
- str += `╭───『 `+ fancytext('Commands',57)+`』──◆`
+ str += `╭┅┅┅『 `+ fancytext('Commands',57)+`』──◆`
 for (const key of keys) {       
 str += `
-┃  ╭─────────────◆
+┃  ╭━━━━━━━━━━━━━◻
 ┃  │ ✯---- ${tiny(key)} ----⦿
-┃  ╰┬────────────◆
+┃  ╰│━━━━━━━━━━━━◻
 ┃  ┌┤ ${category[key].map((cmd, idx) =>`
 ┃  │ ❒ ${idx + 1}. `+`${cmd.name}`)}
-┃  ╰─────────────◆`
+┃  ╰━━━━━━━━━━━━━◻`
             }
-str += `\n╰━━━━━━━━━━━──⊷\n`
+str += `\n╰┅┅┅┅┅┅┅┅┅⊷\n`
 str += `_🔖Send ${prefix}help <command name> to get detailed information of specific command._\n*📍Eg:* _${prefix}help anime_`;
             let generatebutton = [{
 					buttonId: `${prefix}owner`,
