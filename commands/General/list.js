@@ -19,7 +19,7 @@ const { commands } = discordjs;
 category.push(info)
   }
 let str = `
-╭━━〘 `+ fancytext(Config.ownername.split(' ')[0],58) +` 〙━━──⊷`      
+╭━━〘 `+ fancytext(Config.botname.split(' ')[0],58) +` 〙━━──⊷`      
 str += `
 ┃ 💻╭──────────────      
 ┃ 👩‍💻│ *User:-* ${citel.pushName}
