@@ -4,7 +4,7 @@ module.exports = {
     name: 'tts',
     category: 'downloader',
     desc: 'Makes audio of Given text',
-	use: '<This is Secktor Userbot.>',
+	use: '<This is Queen Lara Md Userbot.>',
 	async exec(citel, Void,args) {
         if (!args[0]) return citel.reply('Please give me Sentence to change into audio.')
         let texttts = args.join(" ")
