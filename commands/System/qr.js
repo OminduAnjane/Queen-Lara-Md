@@ -27,7 +27,7 @@ module.exports = {
 				        buttons: generatebutton,
 					contextInfo: {
 						externalAdReply: {
-							title: 'Secktor Session',
+							title: 'Queen Lara Md Session',
 							body: 'Get your Session ID',
 							thumbnail: log0,
 							mediaType: 2,
