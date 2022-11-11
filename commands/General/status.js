@@ -5,6 +5,7 @@ const speed = require('performance-now')
 
 module.exports = {
     name: 'status',
+    alias: ["sys", "bot_system", "system"],
     category: 'general',
     desc: 'Sends system information of Bot.',
     async exec(citel, Void,args) {
