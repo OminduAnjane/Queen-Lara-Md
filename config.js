@@ -13,7 +13,7 @@ global.sudo = process.env.SUDO || '94718080458'
 global.website = 'https://github.com/OminduAnjane/Queen-Lara-Md' //wa.me/+91000000000000
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://github.com/OminduAnjane/Queen-Lora-Md-2.0V/blob/master/loramedia/lora.jpg'
 module.exports = {
-  botname: process.env.BOT_NAME || 'Queen Lara',
+  botname: process.env.BOT_NAME || 'Queen-Lara-Md',
   ownername:process.env.OWNER_NAME || 'Omindu Anjana',
   sessionName: process.env.SESSION_ID || 'PUT-HERE',
   author: process.env.PACK_INFO.split(";")[0], 
