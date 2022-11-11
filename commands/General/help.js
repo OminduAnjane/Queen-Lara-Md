@@ -82,7 +82,20 @@ str += `_🔖Send ${prefix}help <command name> to get detailed information of sp
 						displayText: 'List Menu'
 					},
 					type: 1
-				}
+				},{
+					buttonId: `${prefix}system`,			
+
+		buttonText: {				
+
+		displayText: '💻System💻'			
+
+				},		
+
+			
+
+			type: 1			
+
+		}
 				]
 				let buttonMessaged = {
 					image: { url: await botpic() },
