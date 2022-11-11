@@ -21,23 +21,23 @@ category.push(info)
 let str = `
 ╭━━〘 `+ fancytext(Config.ownername.split(' ')[0],58) +` 〙━━──⊷`      
 str += `
-┃ ⛥╭──────────────      
-┃ ⛥│ *User:-* ${citel.pushName}
-┃ ⛥│ *Theme:-* ${tlang().title}
-┃ ⛥│ *Prefix:-* ${Config.prefix}
-┃ ⛥│ *Owner:-* _${Config.ownername}_
-┃ ⛥│ *Commands:* _${category.length}_
-┃ ⛥│ *Uptime:* _${runtime(process.uptime())}_
-┃ ⛥│ *Mem -* _${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}_
-┃ ⛥│  
-┃ ⛥╰───────────
+┃ 💻╭──────────────      
+┃ 👩‍💻│ *User:-* ${citel.pushName}
+┃ 🧑‍💻│ *Theme:-* ${tlang().title}
+┃ 📑│ *Prefix:-* ${Config.prefix}
+┃ 📒│ *Owner:-* _${Config.ownername}_
+┃ ◼│ *Commands:* _${category.length}_
+┃ 🔏│ *Uptime:* _${runtime(process.uptime())}_
+┃ 🔃│ *Mem -* _${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}_
+┃ 🧰│  
+┃ 📘╰───────────
 ╰━━━━━━━━━━━──⊷\n`
 str += `╭━━━━━━━━━━━────⊷\n`
-str += `┃ ⛥ ╭─────────────\n`
+str += `┃ 💻 ╭─────────────\n`
 for (let i = 0; i < category.length; i++ ) {
-  str+=`┃ ⛥ │ ➛ ${i+1}. `+category[i].name+'\n'
+  str+=`┃ 📓 │ ➛ ${i+1}. `+category[i].name+'\n'
 }
-str += `┃ ⛥ ╰─────────────\n`
+str += `┃ 🪄 ╰─────────────\n`
 str += `╰━━━━━━━━━━━───⊷\n`
 Void.sendMessage(citel.chat,{ image: { url : process.env.THUMB_IMAGE },caption: str})
 }
