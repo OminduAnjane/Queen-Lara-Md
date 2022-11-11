@@ -22,7 +22,7 @@ module.exports = {
                 image: {
                     url: images,
                 },
-                caption: ` `,
+                caption: `powerd by Queen Lara Md `,
                 headerType: 4,
             };
             Void.sendMessage(citel.chat, buttonMessage, {
