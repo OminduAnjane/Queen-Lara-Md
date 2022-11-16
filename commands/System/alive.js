@@ -12,7 +12,7 @@ module.exports = {
 *Hello, my ${citel.pushName},*
 *This is  ${tlang().title}.*
 ${alivemessage}
-*❖Version:-* 0.0.3
+*❖Version:-* 0.0.5
 *❖Uptime:-* ${runtime(process.uptime())}
 *❖Owner:-* ${Config.ownername}
 *❖Branch:-* ${Config.BRANCH}
