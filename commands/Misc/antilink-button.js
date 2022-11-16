@@ -17,14 +17,14 @@ module.exports = {
 					{
 						buttonId: `${prefix}act antilink`,
 						buttonText: {
-							displayText: "Turn On",
+							displayText: "☎Turn On",
 						},
 						type: 1,
               },
 					{
 						buttonId: `${prefix}deact antilink`,
 						buttonText: {
-							displayText: "Turn Off",
+							displayText: "☏Turn Off",
 						},
 						type: 1,
               },
@@ -37,7 +37,7 @@ module.exports = {
 
  addCommand({ on: "body" }, async (Void,citel) => {
 	if (Config.autoreaction ==='true' && citel.text.startsWith(prefix)) {
-		const emojis = ['❤','💕', '😻', '🧡', '💛', '💚', '💙', '💜', '🖤', '❣', '💞', '💓', '💗', '💖', '💘', '💝', '💟', '♥', '💌','🙂','🤗', '😌', '😉', '🤗', '😊', '🎊', '🎉', '🎁', '🎈', '👋']
+		const emojis = ['☠','💕', '☃', '🧡', '💛', '💚', '💙', '💜', '🖤', '❣', '💞', '💓', '💗', '💖', '💘', '💝', '💟', '♥', '💌','🙂','🤗', '😌', '😉', '🤗', '😊', '🎊', '🎉', '🎁', '🎈', '👋']
 		const emokis = emojis[Math.floor(Math.random() * (emojis.length))]
 		Void.sendMessage(citel.chat, {
 			  react: {
