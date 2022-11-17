@@ -67,9 +67,6 @@
        "value": "  *Hi,* @user \n*Welcome in* @gname \n*Member count* : @count th",
        "required" :false
   },
-  "MONGODB_URI": {
-    "description": "A secret String for Mongodb Connection.(Required)"
-  },
     "THEME": {
     "description": "Put the theme name you want to use. Avilable themes are LARALK,ZEROTWO,NEZUKO,LUFFY,GOKU and many more..",
      "value": "LARALK"
