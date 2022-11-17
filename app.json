@@ -81,6 +81,9 @@
   "description": "Worktype of your bot. Use public or private, if it is private then only bot number can use it. If public then everyone can use it.",
          "value": "public"
   },
+   "MONGODB_URI": { "description": "A secret String for Mongodb Connection.(Required)" 
+    
+        },
       "AUTO_REACTION": {
     "description": "Reacts emoji to all commands.",
      "value": "false",
