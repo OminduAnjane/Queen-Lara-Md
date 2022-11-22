@@ -1,5 +1,7 @@
 const { tlang } = require('../../lib')
 const { prefix } = require('../../config')
+const ytIdRegex = /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed|shorts\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/
+const isYT = ytIdRegex.exec(input)
 module.exports = {
     name: "play",
     alias: ['searchyt','ytsearch'],
@@ -11,6 +13,7 @@ module.exports = {
     let yts = require("yt-search");
     let search = await yts(args.join(" "));
     let anu = search.videos[0];
+    let ytVidInfo = (await ytdl.getInfo(input)).videoDetails
     let buttons = [
         {
             buttonId: `${prefix}ytmp4 ${anu.url}`,
@@ -33,14 +36,17 @@ module.exports = {
         },
         caption: `
 ╭───────────────◆
-│⿻ *${tlang().title} Youtube Player* ✨
+│🎩 *${tlang().title} Youtube Player* ✨
 │
-│⿻ *Title:* ${anu.title}
-│⿻ *Duration:* ${anu.timestamp}
-│⿻ *Viewers:* ${anu.views}
-│⿻ *Uploaded:* ${anu.ago}
-│⿻ *Author:* ${anu.author.name}
-│⿻ *Url* : ${anu.url}
+│🌐 *Title:* ${anu.title}
+│⏰ *Duration:* ${anu.timestamp}
+│📗 *Viewers:* ${anu.views}
+│📤 *Uploaded:* ${anu.ago}
+│👍🏻 ${anu.Likes} ${like}\n\n +
+│👤 *Author:* ${anu.author.name}
+│📃 *Url* : ${anu.url}
+│ℹ️ *Category* : ${anu.Category} ${ytVidInfo.category}\n\n +
+│📖 *Description* : ${anu.Description}\n${ytVidInfo.description}
 ╰────────────────◆
 `,
         footer: tlang().footer,
