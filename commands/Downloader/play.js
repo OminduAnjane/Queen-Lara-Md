@@ -29,6 +29,17 @@ module.exports = {
             },
             type: 1,
     },
+        {
+
+            url: `${prefix}ytmp3 ${anu.url}`,
+
+            buttonText: {
+
+                displayText: "🎶 Audio",
+
+            },
+
+            type: "url",
   ];
     let buttonMessage = {
         image: {
